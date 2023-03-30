@@ -95,28 +95,28 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
-            ],
-          },
-          {
-            title: 'Contact us',
-            items: [
-              // {
-              //   label: 'GitHub',
-              //   href: 'https://github.com/facebook/docusaurus',
-              // },
-            ],
-          },
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'Tutorial',
+          //       to: '/docs/intro',
+          //     },
+          //     // {
+          //     //   label: 'Blog',
+          //     //   to: '/blog',
+          //     // },
+          //   ],
+          // },
+          // {
+          //   title: 'Contact us',
+          //   items: [
+          //     // {
+          //     //   label: 'GitHub',
+          //     //   href: 'https://github.com/facebook/docusaurus',
+          //     // },
+          //   ],
+          // },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} VMS.`,
       },
