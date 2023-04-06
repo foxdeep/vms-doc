@@ -1,0 +1,159 @@
+---
+sidebar_position: 2
+id: contractors
+title: Contractors
+tags:
+  - Getting started
+  - Building Manager (BM)
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow'
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/building/contractors'}>
+
+![snapshot](../../assets/bm/bm-contractors-zh-hant.png)
+
+</BrowserWindow>
+
+# Description
+
+On the "Contractors" page, users can view a table of "Personnel" associated with the building. They have the ability to filter personnel based on specific conditions or names, perform CRUD (create, read, update, delete) functions for each individual, upload attachments, and receive access codes. By clicking the button (🤝) located in the upper-right corner, users can access the "Contractors" dialog box. Within this dialog box, users can apply additional filters based on specific conditions or names, manage contractors using CRUD functions, and upload attachments.
+
+## Open Contractor Dialog
+
+Before creating personnel, it is important to have a contractor in place. To create a contractor, the user can click on the "Contractor" button (🤝) located in the upper-right corner, which opens a dialog box. The dialog box displays a table of available contractors, along with a search bar and filter options for finding specific contractors. To add a new contractor, the user can click on the "Add" button (➕).
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/building/contractors'}>
+
+![snapshot](../../assets/bm/bm-contractors-dialog-zh-hant.png)
+
+</BrowserWindow>
+
+## Contractor
+
+In VMS, contractors can be selected for both "construction" and "garrison" type tickets by the tenant.
+
+:::info
+All contractors listed in the BM's dashboard are considered qualified.
+:::
+
+### Create
+
+To create a contractor, the following fields are required:
+
+- Type
+- Name
+- Representative
+- Representative's phone
+
+The following fields are optional:
+
+- Address
+- Note
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/building/contractors'}>
+
+![snapshot](../../assets/bm/bm-create-contractors-zh-hant.png)
+
+</BrowserWindow>
+
+:::tip
+When the user clicks on the "More" button in the contractor table, relevant options such as "Edit Info", "Appendix", and "Delete" will be displayed at the end of each row.
+:::
+
+### Edit
+
+When the user clicks on "Edit Info" in the "More" menu, the editable information of the relevant contractor will be displayed in a dialog box. All of the fields presented can be edited.
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/building/contractors'}>
+
+![snapshot](../../assets/bm/bm-edit-contractors-zh-hant.png)
+
+</BrowserWindow>
+
+### Upload attachments
+
+When the user clicks on "Appendix" in the "More" menu, a dialog box will be displayed showing a list of attachments that a contractor must upload to be qualified.
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/building/contractors'}>
+
+![snapshot](../../assets/bm/bm-contractors-dialog-upload-attachment-zh-hant.png)
+
+</BrowserWindow>
+
+### Delete
+
+When the user clicks on "Delete" in the "More" menu, a warning dialog box will be displayed to double-check and alert the user that the delete action is irreversible.
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/building/contractors'}>
+
+![snapshot](../../assets/bm/bm-delete-contractors-zh-hant.png)
+
+</BrowserWindow>
+
+## Personnel
+
+In VMS, personnels can be selected for both "construction" and "garrison" type tickets by the tenant.
+
+:::info
+All personnels listed in the BM's dashboard are considered qualified.
+:::
+
+### Create
+
+To create a personnel, the following fields are required:
+
+- Avatar
+- Belong Contractor
+- Name
+
+The following fields are optional:
+
+- Phone
+- Qualified
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/building/contractors'}>
+
+![snapshot](../../assets/bm/bm-create-personnel-zh-hant.png)
+
+</BrowserWindow>
+
+### Edit
+
+When the user clicks on "Edit Info" in the "More" menu, the editable information of the relevant personnel will be displayed in a dialog box. All of the fields presented can be edited.
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/building/contractors'}>
+
+![snapshot](../../assets/bm/bm-edit-personnel-zh-hant.png)
+
+</BrowserWindow>
+
+### Upload attachments
+
+When the user clicks on "Appendix" in the "More" menu, a dialog box will be displayed showing a list of attachments that a personnel must upload to be qualified.
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/building/contractors'}>
+
+![snapshot](../../assets/bm/bm-personnel-upload-attachment-zh-hant.png)
+
+</BrowserWindow>
+
+### Access code
+
+The access code can be used in conjunction with Upass to enable VMS to display the available tickets that the personnel can access. Once accessed, VMS will record the access in both the "Events" and "ID Scanners" pages. The access code can be shared via email or downloaded as an image.
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/building/contractors'}>
+
+![snapshot](../../assets/bm/bm-personnel-access-code-zh-hant.png)
+
+</BrowserWindow>
+
+### Delete
+
+When the user clicks on "Delete" in the "More" menu, a warning dialog box will be displayed to double-check and alert the user that the delete action is irreversible.
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/building/contractors'}>
+
+![snapshot](../../assets/bm/bm-delete-personnel-zh-hant.png)
+
+</BrowserWindow>
