@@ -1,0 +1,167 @@
+---
+sidebar_position: 3
+id: form-templates
+title: Form Templates
+tags:
+  - Getting started
+  - Building Manager (BM)
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow'
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/template-management/form-templates'}>
+
+![snapshot](../../assets/bm/bm-form-template-zh-hant.png)
+
+</BrowserWindow>
+
+# Description
+
+On the "Form Template" page, users can see four tabs named "General", "Visitor", "Construction", and "Garrison", which represent different types of form templates. These forms are used to collect information from applicants who want to access the building by scanning their access code with Upass, each with a different purpose. Each Form Template will be represented as a ticket in the tenant view.
+
+In each type of Form Template table, users can see the following columns:
+
+- "Create Type": This column indicates whether the form template was created by the user or if it is a system default template. If it is a "system default" template, the user cannot modify the content of the form or delete it; they can only modify the name of the form template.
+- "Release Status": This column indicates whether the form template has been released to tenants or not.
+- "Name"
+- "Create Time"
+
+## Create
+
+To create a form template, the following fields are required:
+
+- Copy template source
+- Name
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/template-management/form-templates'}>
+
+![snapshot](../../assets/bm/bm-create-form-template-zh-hant.png)
+
+</BrowserWindow>
+
+## Edit
+
+Once a form template is created, users can access a range of options in the "More" menu to make modifications to the form template's information, content, Approval Management, and related attachments. To access these options, simply click on the "More" button.
+
+### Info
+
+When the user clicks on "Edit Info" in the "More" menu, the editable information of the relevant form template will be displayed in a dialog box. All of the fields presented can be edited.
+
+- "Open Clique": refers to the group of individuals who will initiate the ticket.
+- "Close Clique": refers to the group of individuals who will close the ticket.
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/template-management/form-templates'}>
+
+![snapshot](../../assets/bm/bm-edit-form-template-zh-hant.png)
+
+</BrowserWindow>
+
+### Form Designer
+
+Upon clicking "Form Designer" in the "More" menu, a full-screen dialog will slide up, presenting three tabs: "Form Schema," "Approval Management," and "Attachment Management." Each tab contains relevant information and options for modifying the form's design, approval process, and associated attachments.
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/template-management/form-templates'}>
+
+![snapshot](../../assets/bm/bm-form-template-menu-form-designer-zh-hant.png)
+
+</BrowserWindow>
+
+#### Form Schema
+
+<Tabs>
+  <TabItem value="questionType" label="Question Type" default>
+  In the "Form Schema" tab, users can modify the Form Schema using a variety of question types, including:
+
+- Text
+  - Single Input: a `single line` text field
+  - Comment: a `multi-line` text field
+- Select
+  - Checkbox: a checkbox group that contains multiple options where `multiple` options can be selected as answers.
+  - Radio Group: a radio group that contains multiple options where `one` option can be selected as the answer.
+  - Select dropdown: a dropdown that contains multiple options where `one/multiple` options can be selected as answers.
+  - Autocomplete: a dropdown that contains multiple options where `one/multiple` options can be selected as answers. Users can also type in the text field to filter options.
+  - 🚧 Image Picker
+- Boolean: a switch that returns `true/false` as an answer.
+- 🚧 Ranking
+- 🚧 Upload File
+- Date & Time
+  - Date Picker: a picker that returns `date` as an answer (e.g. 2023-04-07).
+  - Time Picker: a picker that returns `time` as an answer (e.g. 08:00).
+  - Date Time Picker: a picker that returns `date-time` as an answer (e.g. 2023-04-07 08:00).
+  - Date Range Picker: a picker that returns `date range` as an answer (e.g. 2023-04-07 ~ 2023-04-08).
+- Image Editor: an editor that allows users to add annotations on an image, such as drawings or text.
+
+:::note
+The symbol 🚧 indicates that a particular question type is currently in development and not yet released.
+:::
+
+  </TabItem>
+
+<TabItem value="attribute" label="Attributes">
+    
+Common attributes for each question type include:
+
+- Question: the name of the question
+- Required: whether the question is required or not
+
+Unique attributes for specific question types include:
+
+- Single Input
+- Text type (Normal Text/ Phone)
+  - Normal Text: a `plain text` field
+  - Phone: a `phone number text` field that verifies the format of the given country.
+- Checkbox
+  - Minimum/ Maximum picks: the number of options that users can select
+- Date Range Picker
+  - Minimum/ Maximum days: the number of date ranges that users can select
+  - Start Time/ End Time: the start time/end time for the date
+- Autocomplete
+  - API: a switch that can use data from the system such as `floors`, `contractors`, and `personnel`.
+
+</TabItem>
+
+</Tabs>
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/template-management/form-templates'}>
+
+![snapshot](../../assets/bm/bm-form-template-form-designer-form-zh-hant.png)
+
+</BrowserWindow>
+
+#### Approval Management
+
+Before releasing the form template, it is important to set up the approval flow. Users can easily configure how many people should approve a ticket before it can be closed.
+
+If the clique is a tenant, the applicant will assign the approver during ticket creation. In this case, the user only needs to assign the approver for each stage of the approval flow. It's worth noting that for stages that belong to BM, the BM needs to choose a user who will act as the approver for that stage. In addition, the BM needs to assign the appropriate permission role for the approver, which can be either admin or regular user. This will ensure that the approval flow operates smoothly and efficiently.
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/template-management/form-templates'}>
+
+![snapshot](../../assets/bm/bm-form-template-form-designer-approval-zh-hant.png)
+
+</BrowserWindow>
+
+#### Attachment Management
+
+Once a ticket is approved, users can upload any relevant attachments that tenants can then download. This allows tenants to access any necessary documents or files associated with the ticket, providing them with the information they need to proceed with their request.
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/template-management/form-templates'}>
+
+![snapshot](../../assets/bm/bm-form-template-form-designer-attachement-zh-hant.png)
+
+</BrowserWindow>
+
+### Release Status
+
+Users can easily change the status of a form template by selecting the "Conceal/Publish" option from the "More" menu. Simply click on this option to make the desired changes.
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/template-management/form-templates'}>
+
+![snapshot](../../assets/bm/bm-form-template-menu-status-zh-hant.png)
+
+</BrowserWindow>
+
+## Delete
+
+When the user clicks on "Delete" in the "More" menu, a warning dialog box will be displayed to double-check and alert the user that the delete action is irreversible.

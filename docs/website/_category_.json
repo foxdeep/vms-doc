@@ -2,7 +2,6 @@
   "label": "Website",
   "position": 2,
   "link": {
-    "type": "generated-index",
-    "description": "VMS have three protals for different user."
+    "type": "generated-index"
   }
 }
