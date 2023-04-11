@@ -1,0 +1,54 @@
+---
+sidebar_position: 6
+id: id-scanners
+title: ID 掃描器
+tags:
+  - 開始使用
+  - 樓管 (BM)
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow'
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/building/scanners'}>
+
+![snapshot](../../assets/bm/bm-id-scanners-zh-hant.png)
+
+</BrowserWindow>
+
+# 描述
+
+在“ID 掃描器”，用戶可以查看大樓可用的 ID 掃描器。 用戶可以使用提供的授權碼為大樓創建 ID 掃描器，每組授權碼皆有一定的可用數量和到期日期。 在每個授權碼下，用戶可以看到可用 ID 掃描器，包括他們的 ID、名稱和最後更新時間。 最後一列中的“更多”按鈕提供了編輯或刪除 ID 掃描器的選項。
+
+:::note
+如果您需要額外的授權碼，請聯繫我們。
+:::
+
+## 創建
+
+要創建掃描器，需要以下欄位：
+
+- 名稱
+
+以下欄位為選填：
+
+- OWL 協力單元 ID（僅當大樓具有 OWL 模組時才會出現）
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/building/scanners'}>
+
+![snapshot](../../assets/bm/bm-create-id-scanner-zh-hant.png)
+
+</BrowserWindow>
+
+## 編輯
+
+當用戶點擊“更多”選單中的“編輯”時，會在對話框中顯示相關掃描器的可編輯信息。 所有顯示的欄位都可以編輯。
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/building/scanners'}>
+
+![snapshot](../../assets/bm/bm-edit-id-scanner-zh-hant.png)
+
+</BrowserWindow>
+
+## 刪除
+
+當用戶點擊“更多”選單中的“刪除”時，會彈出一個警告對話框，再次確認並提醒用戶刪除操作不可逆。

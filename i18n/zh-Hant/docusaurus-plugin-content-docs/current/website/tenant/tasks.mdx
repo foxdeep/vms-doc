@@ -1,0 +1,121 @@
+---
+sidebar_position: 3
+id: tasks
+title: 申請任務
+tags:
+  - 開始使用
+  - 租戶
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow'
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/vms/tasks'}>
+
+![snapshot](../assets/vms/vms-tasks-zh-hant.png)
+
+</BrowserWindow>
+
+# 描述
+
+**申請任務**是租戶的重要功能，提供用戶建立多種用途的進入大樓許可請求，例如`一般`、`訪客`、`施工`和`駐廠`。值得注意的是，每個任務由多個**申請單**組成。
+
+## 申請任務
+
+此頁面包含一個表格，顯示以下列：
+
+- 狀態：顯示當前任務的狀態，可以是四種選項之一：`已開啟`、`錯誤`、`已鎖定`或`已關閉`。
+- ID
+- 名稱
+- 大樓：指定與任務相關的大樓。
+- 類型：指示任務的類型，為以下四種：`一般`、`訪客`、`施工`和`駐廠`。
+- 提交時間
+- 最新簽核資訊：顯示任務的最新簽核簡要信息。
+
+此外，使用者可以搜尋特定任務名稱或根據特定條件應用篩選器以找尋任務。
+
+### 創建
+
+創建任務時，用戶必須提供以下信息：
+
+- 大樓：指定用戶正在請求訪問的大樓。
+- 類型：表示正在建立的任務類型。
+- 申請任務：概述了由 BM 提供的任務流程。
+- 名稱：任務名稱。
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/vms/tasks'}>
+
+![snapshot](../assets/vms/vms-create-task-zh-hant.png)
+
+</BrowserWindow>
+
+### 狀態
+
+一旦創建了任務，它將出現在表格中，並顯示以下其中一個狀態：
+
+- `已開啟`：這是新創建任務的默認狀態。
+- `錯誤`：此狀態表示任務發生了錯誤。用戶可以在狀態提示中查看詳細信息，並應向其管理員回報問題。
+- `已鎖定`：此狀態表示管理員已鎖定任務，防止進行任何進一步的修改或關閉。
+- `已關閉`：此狀態表示任務已關閉，且不能再添加新的申請單。用戶可以通過單擊詳細頁面上的**關閉任務**按鈕來關閉，一旦任務被關閉，就無法重新打開。
+
+## 申請單
+
+在任務詳細頁面上，用戶將看到包含任務名稱和狀態圖示的標題，以及一個關閉任務按鈕。在此下方，將顯示一個包含相關申請單的表格，其中包括以下列：
+
+- 狀態：指示申請單的狀態，可以是以下七種之一：`準備中`、`準備完成`、`錯誤`、`進行中`、`已拒絕`、`已取消`或`已完成`。
+- ID
+- 主旨：指定申請單的名稱。
+- 大樓：與申請單相關聯的大樓。
+- 類型：指示申請單的類型，可以是以下四種之一：`一般`、`訪客`、`施工`和`駐廠`。這通常與申請任務類型相同。
+- 提交時間
+- 操作動作：將顯示四個按鈕：
+  - QR 碼：為申請單生成一個 QR 碼，可以掃描以查看申請單詳細信息，而無需登錄。此 QR 碼也可以保存為 PDF 文件。
+  - 附件：顯示申請單的任何相關附件，可以在申請單狀態為`已完成`後下載。
+  - 複製：允許用戶創建所需申請單的副本。
+  - 更多：提供可以對申請單執行的其他操作。
+
+點擊申請單列，將彈出一個對話框，其中包含與申請單相關的所有信息。
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/vms/tasks/{taskId}'}>
+
+![snapshot](../assets/vms/vms-ticket-content-zh-hant.png)
+
+</BrowserWindow>
+
+### 創建或複製
+
+當所有現有申請單的狀態為`進行中`、`已完成`或`已取消`時，用戶可以創建或複製申請單。
+
+#### 創建
+
+用戶可以點擊屏幕右下角的“➕”按鈕創建申請單。創建申請單，用戶必須提供以下信息：
+
+- 表單模板：指定要應用的表單模板。
+- 名稱：指定申請單名稱。
+
+新創建的申請單將添加到任務詳情頁面的表格中，初始狀態為**準備完成**。
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/vms/tasks/{taskId}'}>
+
+![snapshot](../assets/vms/vms-create-ticket-zh-hant.png)
+
+</BrowserWindow>
+
+#### 複製
+
+要創建新申請單，用戶也可以點擊位於所需申請單行最後一列的 **複製** 按鈕。這將打開一個新的申請單，並預先填寫已複製的內容。用戶可在提交之前根據需求修改內容。
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/vms/tasks/{taskId}'}>
+
+![snapshot](../assets/vms/vms-copy-ticket-zh-hant.png)
+
+</BrowserWindow>
+
+### 狀態
+
+創建後，任務將在表中找到。 但是現在還未開始申請單流程。 用戶必須點擊進入詳細信息頁面，並看到一張相關申請單的表格。在表頭的最後一欄中，會看到兩個按鈕：`啟動所有申請單` 和 `關閉所有申請單`。
+
+<BrowserWindow url={'https://vms.cesbg.efoxconn.com/vms/tasks/{taskId}'}>
+
+![snapshot](../assets/vms/vms-task-tickets-zh-hant.png)
+
+</BrowserWindow>
