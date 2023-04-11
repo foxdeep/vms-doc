@@ -92,6 +92,11 @@ const config = {
           // },
         ],
       },
+      algolia: {
+        appId: 'UN5CJHFR9N',
+        apiKey: 'e15e8d4a39d7c9db1992305095bd8c26',
+        indexName: 'vms-algolia',
+      },
       footer: {
         style: 'dark',
         links: [
