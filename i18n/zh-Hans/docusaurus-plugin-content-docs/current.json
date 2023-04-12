@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Website": {
+    "message": "网页",
+    "description": "The label for category Website in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tenant": {
+    "message": "租戶",
+    "description": "The label for category Tenant in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Building Manager (BM)": {
+    "message": "楼管 (BM)",
+    "description": "The label for category Building Manager (BM) in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Building": {
+    "message": "大楼",
+    "description": "The label for category Building in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Template Management": {
+    "message": "模板管理",
+    "description": "The label for category Template Management in sidebar tutorialSidebar"
+  }
+}
