@@ -104,8 +104,8 @@ const config = {
         ],
       },
       algolia: {
-        appId: 'UN5CJHFR9N',
-        apiKey: 'e15e8d4a39d7c9db1992305095bd8c26',
+        appId: '6IQQ0YD5JW',
+        apiKey: '58966452028fe703e32aac8964b81d1f',
         indexName: 'vms-algolia',
       },
       footer: {
