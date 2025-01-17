@@ -20,3 +20,28 @@ import BrowserWindow from '@site/src/components/BrowserWindow'
 **施工申请总表**为用户提供了多种选项，用于过滤和搜索特定时间范围内的大楼申请单。用户可以选择今天、本周、本月、今年等时间范围，也可以设置自定义范围。此外，用户可以根据申请单是否为已完成或当前用户签核来过滤。搜索功能允许用户通过输入申请单名称来查找。
 
 此外，用户可以将所有搜索结果输出为 Excel 工作表，进而分析或统计。
+
+## 筛选
+
+用户可以根据以下条件筛选施工申请：
+
+- 通过输入工单编号、名称、申请人和承包商
+- 时间范围
+- 已完成审批
+- 当前登录用户审批
+
+<BrowserWindow url={'https://vms.ces.myfiinet.com/bm/bookings'}>
+
+![snapshot](/assets/bm/bm-construction-application-filter-zh-hant.png)
+
+</BrowserWindow>
+
+## 自定义表格列
+
+用户可以通过“自定义表格列”按钮显示/隐藏列。
+
+<BrowserWindow url={'https://vms.ces.myfiinet.com/bm/bookings'}>
+
+![snapshot](/assets/bm/bm-construction-application-custom-col-zh-hant.png)
+
+</BrowserWindow>

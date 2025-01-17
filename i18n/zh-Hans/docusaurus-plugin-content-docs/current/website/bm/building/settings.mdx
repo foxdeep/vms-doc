@@ -8,6 +8,8 @@ tags:
 ---
 
 import BrowserWindow from '@site/src/components/BrowserWindow'
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
 
 <BrowserWindow url={'https://vms.ces.myfiinet.com/bm/building/settings'}>
 
@@ -17,7 +19,7 @@ import BrowserWindow from '@site/src/components/BrowserWindow'
 
 # 描述
 
-“设置” 包含 “资讯”、“功能设置”、“楼层管理” 三个分页。
+“设置”页面包括三个标签页，分别是“资讯”、“承揽商附件配置”、“承揽人员附件配置”、“功能设置”和“楼层管理”。
 
 ## 资讯
 
@@ -38,6 +40,35 @@ import BrowserWindow from '@site/src/components/BrowserWindow'
 ![snapshot](/assets/bm/bm-settings-functions-customized-zh-hant.png)
 
 </BrowserWindow>
+
+## 承揽商/ 承揽人员附件配置
+
+“承揽商附件配置”和“承揽人员附件配置”标签页允许用户配置上传承揽人员和人员附件所需的栏位。每个附件配置需要以下栏位：
+
+- 名称
+- 通知条件
+  - 空: 指定当栏位为空时，是否应自动通知楼管。
+- 保存后更新栏位: 每当另一个栏位更新时，相应地更新此栏位。
+
+<BrowserWindow url={'https://vms.ces.myfiinet.com/bm/building/settings'}>
+
+![snapshot](/assets/bm/bm-settings-attachment-config-zh-hant.png)
+
+</BrowserWindow>
+
+<Tabs>
+  <TabItem value="type" label="附件类型" default>
+
+管理员可以配置上传承揽商和人员附件所需的栏位。每种附件类型都有其自己的配置选项。可用的类型如下：
+
+- 文本
+- 日期
+- 文件：可以设置可接受的文件类型，如 `pdf`、`doc`、`xls` 等。
+
+![snapshot](/assets/bm/bm-settings-attachment-config-type-zh-hant.png)
+
+  </TabItem>
+</Tabs>
 
 ## 楼层管理
 

@@ -17,7 +17,7 @@ import BrowserWindow from '@site/src/components/BrowserWindow'
 
 # Description
 
-On the "Contractors" page, users can view a table of "Personnel" associated with the building. They have the ability to filter personnel based on specific conditions or names, perform CRUD (create, read, update, delete) functions for each individual, upload attachments, and receive access codes. By clicking the button (🤝) located in the upper-right corner, users can access the "Contractors" dialog box. Within this dialog box, users can apply additional filters based on specific conditions or names, manage contractors using CRUD functions, and upload attachments.
+On the "Contractors" page, users can view a table of "Personnel" associated with the building. They have the ability to filter personnel based on specific conditions or names, perform CRUD (create, read, update, delete) functions for each individual, upload attachments, get "pass" (qr code) and generate training passes. By clicking the button (🤝) located in the upper-right corner, users can access the "Contractors" dialog box. Within this dialog box, users can apply additional filters based on specific conditions or names, manage contractors using CRUD functions, and upload attachments.
 
 ## Open Contractor Dialog
 
@@ -75,7 +75,11 @@ When the user clicks on "Edit Info" in the "More" menu, the editable information
 
 When the user clicks on "Appendix" in the "More" menu, a dialog box will be displayed showing a list of attachments that a contractor must upload to be qualified.
 
-<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/building/contractors'}>
+:::info
+To change the content of attachments, the user can edit the required fields in Building's Settings > Contractor Attachment Config.
+:::
+
+<BrowserWindow url={'https://vms.ces.myfiinet.com/bm/building/contractors'}>
 
 ![snapshot](/assets/bm/bm-contractors-dialog-upload-attachment-zh-hant.png)
 
@@ -132,21 +136,52 @@ When the user clicks on "Edit Info" in the "More" menu, the editable information
 
 When the user clicks on "Appendix" in the "More" menu, a dialog box will be displayed showing a list of attachments that a personnel must upload to be qualified.
 
-<BrowserWindow url={'https://vms.cesbg.efoxconn.com/bm/building/contractors'}>
+:::info
+To change the content of attachments, the user can edit the required fields in Building's Settings > Personnel Attachment Config.
+:::
+
+<BrowserWindow url={'https://vms.ces.myfiinet.com/bm/building/contractors'}>
+
+![snapshot](/assets/bm/bm-personnel-upload-attachment-zh-hant.png)
+
+</BrowserWindow>
+
+### Pass code
+
+The pass code can be used in conjunction with Upass to enable VMS to display the available tickets that the personnel can access. Once accessed, VMS will record the access in both the "Events" and "ID Scanners" pages. The access code can be shared via email or downloaded as an image.
+
+<BrowserWindow url={'https://vms.ces.myfiinet.com/bm/building/contractors'}>
 
 ![snapshot](/assets/bm/bm-personnel-access-code-zh-hant.png)
 
 </BrowserWindow>
 
-### Access code
+### Training pass
 
-The access code can be used in conjunction with Upass to enable VMS to display the available tickets that the personnel can access. Once accessed, VMS will record the access in both the "Events" and "ID Scanners" pages. The access code can be shared via email or downloaded as an image.
+When the user clicks on "Training Pass" in the "More" menu, a file will be downloaded containing the training pass and personnel information. Also can select multiple personnels to generate training passes.
 
 <BrowserWindow url={'https://vms.ces.myfiinet.com/bm/building/contractors'}>
 
 ![snapshot](/assets/bm/bm-contractors-training-pass-zh-hant.png)
 
 </BrowserWindow>
+
+<BrowserWindow url={'https://vms.ces.myfiinet.com/bm/building/contractors'}>
+
+![snapshot](/assets/bm/bm-contractors-training-passes-zh-hant.png)
+
+</BrowserWindow>
+
+:::info
+To change the content of training pass, the user can download/ upload the template with menu in "Training Pass Template".
+
+<BrowserWindow url={'https://vms.ces.myfiinet.com/bm/building/contractors'}>
+
+![snapshot](/assets/bm/bm-contractors-training-pass-template-zh-hant.png)
+
+</BrowserWindow>
+
+:::
 
 ### Delete
 

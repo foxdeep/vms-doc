@@ -17,7 +17,7 @@ import BrowserWindow from '@site/src/components/BrowserWindow'
 
 # 描述
 
-在“ID 掃描器”，用戶可以查看大樓可用的 ID 掃描器。 用戶可以使用提供的授權碼為大樓創建 ID 掃描器，每組授權碼皆有一定的可用數量和到期日期。 在每個授權碼下，用戶可以看到可用 ID 掃描器，包括他們的 ID、名稱和最後更新時間。 最後一列中的“更多”按鈕提供了編輯或刪除 ID 掃描器的選項。
+在“ID 掃描器”，用戶可以查看大樓可用的 ID 掃描器。 用戶可以使用提供的授權碼為大樓創建 ID 掃描器，每組授權碼皆有一定的可用數量和到期日期。 在每個授權碼下，用戶可以看到可用 ID 掃描器，包括他們的 ID、名稱和最後更新時間。 最後一列中的“更多”按鈕提供了編輯或刪除 ID 掃描器的選項。通過點擊掃描器的行，用戶可以查看掃描器的訪問事件。
 
 :::note
 如果您需要額外的授權碼，請聯繫我們。
@@ -52,3 +52,13 @@ import BrowserWindow from '@site/src/components/BrowserWindow'
 ## 刪除
 
 當用戶點擊“更多”選單中的“刪除”時，會彈出一個警告對話框，再次確認並提醒用戶刪除操作不可逆。
+
+## 事件
+
+通過選擇掃描器的行，用戶可以訪問該掃描器的訪問事件日誌。用戶可以按日期範圍和人員姓名篩選事件。在每行的末尾，用戶可以點擊“查看”按鈕以檢索與事件相關的申請單。
+
+<BrowserWindow url={'https://vms.ces.myfiinet.com/bm/building/scanners'}>
+
+![snapshot](/assets/bm/bm-id-scanner-events-zh-hant.png)
+
+</BrowserWindow>

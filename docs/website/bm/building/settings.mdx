@@ -8,16 +8,18 @@ tags:
 ---
 
 import BrowserWindow from '@site/src/components/BrowserWindow'
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
 
 <BrowserWindow url={'https://vms.ces.myfiinet.com/bm/building/settings'}>
 
-![snapshot](../../assets/bm/bm-settings-info-zh-hant.png)
+![snapshot](/assets/bm/bm-settings-info-zh-hant.png)
 
 </BrowserWindow>
 
 # Description
 
-The "Settings" page comprises three tabs, including "Info", "Function Settings", and "Floor Planner".
+The "Settings" page comprises three tabs, including "Info", "Contractor Attachment Config", "Personnel Attachment Config", "Function Settings", and "Floor Planner".
 
 ## Info
 
@@ -29,15 +31,44 @@ The "Function Settings" tab allows users to toggle the common functions such as 
 
 <BrowserWindow url={'https://vms.ces.myfiinet.com/bm/building/settings'}>
 
-![snapshot](../../assets/bm/bm-settings-functions-zh-hant.png)
+![snapshot](/assets/bm/bm-settings-functions-zh-hant.png)
 
 </BrowserWindow>
 
 <BrowserWindow url={'https://vms.ces.myfiinet.com/bm/building/settings'}>
 
-![snapshot](../../assets/bm/bm-settings-functions-customized-zh-hant.png)
+![snapshot](/assets/bm/bm-settings-functions-customized-zh-hant.png)
 
 </BrowserWindow>
+
+## Contractor/ Personnel Attachment Config
+
+The "Contractor Attachment Config" and "Personnel Attachment Config" tabs allow users to configure the required fields for uploading attachments for contractors and personnel. Each attachment config requires the following fields:
+
+- Name
+- Notify condition
+  - Empty: Specifies whether the attachment should be automatically notified to BM when the field is empty.
+- Update the field after saving: whenever another field is updated, update this field accordingly.
+
+<BrowserWindow url={'https://vms.ces.myfiinet.com/bm/building/settings'}>
+
+![snapshot](/assets/bm/bm-settings-attachment-config-zh-hant.png)
+
+</BrowserWindow>
+
+<Tabs>
+  <TabItem value="type" label="Attachment Type" default>
+
+Admin can configure the required fields for uploading attachments for contractors and personnel. Each attachment type has its own configuration options. Following types are available:
+
+- Text
+- Date
+- File: can set acceptable file types such as `pdf`, `doc`, `xls`, etc.
+
+![snapshot](/assets/bm/bm-settings-attachment-config-type-zh-hant.png)
+
+  </TabItem>
+</Tabs>
 
 ## Floor Planner
 
