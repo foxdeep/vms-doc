@@ -38,7 +38,9 @@ export default function BrowserWindow({
             </div>
 
             <div className={styles.browserWindowBody} style={bodyStyle}>
-                {children}
+                <a href={url} target="_blank">
+                    {children}
+                </a>
             </div>
         </div>
     );
