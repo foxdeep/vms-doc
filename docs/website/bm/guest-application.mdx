@@ -1,0 +1,50 @@
+---
+sidebar_position: 4
+id: guest-application
+title: List of guest application
+tags:
+  - Getting started
+  - Building Manager (BM)
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow'
+
+<BrowserWindow url={'https://vms.ces.myfiinet.com/bm/guests'}>
+
+![snapshot](/assets/bm/bm-guest-application-zh-hant.png)
+
+</BrowserWindow>
+
+## Guest Application Overview
+
+The Guest Application feature lets you filter and search guest applications within a specific time range. You can choose from options like today, this week, this month, this year, or set a custom range.
+
+> Note: Please be aware that users with "User" permission need a privilege password to operate the functions on this page. Please contact the administrator for permission. Administrators can configure this in Building Management > Building > Settings > Function Settings.
+
+## Guest Application Card
+
+The Guest Application Card shows you all the info you need:
+
+- Ticket ID and Name
+- Check ticket: This opens the ticket details
+- Guest List: This includes the guest’s booking ID, type, company, job title, name, phone, entry requirement, and events.
+  - Entry Requirement means the guest is in the database and has been approved.
+  - Events: You can see the clock-in/clock-out events for the guest.
+- Check-in/ Check-out for all: This lets you check-in/ check-out all guests in the list.
+
+## Create Event
+
+![create-event](/assets/bm/bm-guest-application-create-event-zh-hant.png)
+
+To create an event, click the “Create Event” button in the Event list dialog. You can fill in the event details like clock-in and clock-out times and guest pass numbers. The system will also fill in the basic info (you can edit it).
+
+## Event List
+
+![events](/assets/bm/bm-guest-application-events-zh-hant.png)
+
+In the Event list dialog, you’ll see the following info:
+
+- Event ID
+- Event Clock-in and Clock-out times: You can click the clock-out button to set the current time as clock-out for the event.
+- Guest Pass Number
+- Action: You can edit the event.

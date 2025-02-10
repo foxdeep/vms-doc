@@ -1,0 +1,50 @@
+---
+sidebar_position: 4
+id: guest-application
+title: 访客申请总表
+tags:
+  - 开始使用
+  - 楼管 (BM)
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow'
+
+<BrowserWindow url={'https://vms.ces.myfiinet.com/bm/guests'}>
+
+![snapshot](/assets/bm/bm-guest-application-zh-hant.png)
+
+</BrowserWindow>
+
+## 访客申请概览
+
+访客申请功能允许您在特定时间范围内筛选和搜索访客申请。您可以选择今天、本周、本月、本年或设置自定义范围等选项。
+
+> 注: 请注意，权限为“一般用户”需管制密码才能操作此页面功能。请联系管理员以获取权限。管理员可在 大楼管理 > 大楼 > 大楼设置 > 功能设置 中设置。
+
+## 访客申请卡片
+
+访客申请卡片显示您需要的所有信息：
+
+- 申请单号和名称
+- 查看申请单：打开申请单详情
+- 访客列表：包括访客的预约 ID、类型、公司、职位、姓名、电话、通行资格和事件。
+  - 通行资格表示访客已存在于数据库中并已获得批准。
+  - 进出纪录：您可以查看访客的签到/签出事件。
+- 全部入厂/出厂：允许您为列表中的所有访客进行入厂/出厂。
+
+## 创建进出纪录
+
+![create-event](/assets/bm/bm-guest-application-create-event-zh-hant.png)
+
+要创建进出纪录，请在列表对话框中点击"创建进出纪录"按钮。您可以填写纪录详情，如入厂/出厂时间以及访客通行证号码。系统也会自动填入基本信息（您可以编辑）。
+
+## 进出纪录列表
+
+![events](/assets/bm/bm-guest-application-events-zh-hant.png)
+
+在进出纪录列表对话框中，您将看到以下信息：
+
+- 进出纪录编号
+- 进出时间：您可以点击出厂按钮将当前时间设置为出厂时间
+- 访客通行证号码
+- 操作：您可以编辑进出纪录
