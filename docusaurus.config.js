@@ -90,17 +90,7 @@ const config = {
           {
             type: 'localeDropdown',
             position: 'right',
-          },
-          // { to: '/blog', label: 'Blog', position: 'left' },
-          // {
-          //   type: 'docsVersionDropdown',
-          //   position: 'right',
-          // },
-          // {
-          //   href: 'https://github.com/facebook/docusaurus',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
+          }
         ],
       },
       algolia: {
@@ -110,30 +100,6 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          // {
-          //   title: 'Docs',
-          //   items: [
-          //     {
-          //       label: 'Tutorial',
-          //       to: '/docs/intro',
-          //     },
-          //     // {
-          //     //   label: 'Blog',
-          //     //   to: '/blog',
-          //     // },
-          //   ],
-          // },
-          // {
-          //   title: 'Contact us',
-          //   items: [
-          //     // {
-          //     //   label: 'GitHub',
-          //     //   href: 'https://github.com/facebook/docusaurus',
-          //     // },
-          //   ],
-          // },
-        ],
         copyright: `Copyright © ${new Date().getFullYear()} VMS.`,
       },
       prism: {
